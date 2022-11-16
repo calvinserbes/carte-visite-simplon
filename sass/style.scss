@@ -80,6 +80,13 @@ body{
     color: #ff1cb0;
 }
 
+.exclam::after{
+    content: ':hover';
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
 .animThree{
     margin-top: -90px;
     letter-spacing: 5px;
