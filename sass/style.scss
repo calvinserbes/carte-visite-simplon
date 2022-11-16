@@ -8,7 +8,26 @@ body{
     font-family: 'Roboto', serif;
 }
 
-// header ============================
+// navbar =================================
+
+.nav{
+    padding: 8px;
+    background: #070707;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        a{
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 18px;
+            letter-spacing: 3px;
+            color: #fff;
+        }
+    }
+}
+// =========================================
+// header ==================================
 
 .header{
     height: 100%;
@@ -22,7 +41,7 @@ body{
     padding: 0;
 }
 
-// header anim =====================
+// header anim =============================
 .animOne{
     padding-top: 150px;
     margin-bottom: -50px;
@@ -74,7 +93,7 @@ body{
         animation-fill-mode: forwards;
     }
 }
-
+// media screen ===========================
 @media screen and (max-width: 1000px){
     .animOne{
         h1{
@@ -98,22 +117,21 @@ body{
 @media screen and (max-width: 670px){
     .animOne{
         h1{
-            font-size: 30px;
+            font-size: 40px;
             margin-bottom: 25px;
         }
     }
     .animTwo{
         margin-top: 15px;
-        margin-left: 0px;
         span{
-            font-size: 70px;
+            font-size: 90px;
         }
         .exclam{
             display: none;
         }
     }
     .animThree{
-        margin-top: -20px;
+        margin-top: -30px;
         p{
             font-size: 13px;
         }
@@ -129,22 +147,22 @@ body{
     }
     .animTwo{
         margin-left: 150px;
+        h1{
+            font-size: 30px;
+        }
         span{
             font-size: 100px;
         }
     }
     .animThree{
-        margin-top: -40px;
-        p{
-            font-size: 13px;
-        }
+        display: none;
     }
 }
 
-// ===================================
+// =======================================
 
-// ===================================
-// Animation for header ==============
+// =======================================
+// Animation for header ==================
 
 @keyframes slideOne {
     from {
@@ -180,28 +198,33 @@ body{
         color: #fff;
     }
 }
-// =====================================
+// ======================================
+// section present ======================
 
 .present{
     height: 100%;
     background: linear-gradient(#070707,#131313);
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    
     color: #fff;
 }
 
 .img{
+    padding: 25px;
     animation: slideImg 5s;
     animation-fill-mode: forwards;
-    margin-top: -150px;
 }
 
 .presentation{
-    margin: -45px 70px 0 150px;
+    padding: 25px;
     font-weight: 300;
     width: 50%;
     h4{
-        font-weight: 300;
+        font-weight: 400;
+        letter-spacing: 3px;
         text-align: center;
         font-size: 25px;
         margin-bottom: 25px;
@@ -211,6 +234,22 @@ body{
     }
 }
 
+.presentation p::before{
+    content: '<p>';
+    font-family: 'Qwigley', cursive;
+    color: #ff1cb0;
+    font-size: 25px;
+    margin-right: 20px;
+}
+.presentation p::after{
+    content: '</p>';
+    font-family: 'Qwigley', cursive;
+    font-size: 25px;
+    margin-left: 20px;
+    color: #ff1cb0;
+}
+
+// anim for present section ===============
 @keyframes slideImg {
     from{
         margin-left: -20%;
@@ -221,3 +260,5 @@ body{
         opacity: 1;
     }
 }
+//=========================================
+//=========================================

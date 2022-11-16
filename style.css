@@ -8,6 +8,23 @@ body {
   font-family: "Roboto", serif;
 }
 
+.nav {
+  padding: 8px;
+  background: #070707;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.nav ul a {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
 .header {
   height: 100%;
   color: #070707;
@@ -89,21 +106,20 @@ body {
 }
 @media screen and (max-width: 670px) {
   .animOne h1 {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 25px;
   }
   .animTwo {
     margin-top: 15px;
-    margin-left: 0px;
   }
   .animTwo span {
-    font-size: 70px;
+    font-size: 90px;
   }
   .animTwo .exclam {
     display: none;
   }
   .animThree {
-    margin-top: -20px;
+    margin-top: -30px;
   }
   .animThree p {
     font-size: 13px;
@@ -117,14 +133,14 @@ body {
   .animTwo {
     margin-left: 150px;
   }
+  .animTwo h1 {
+    font-size: 30px;
+  }
   .animTwo span {
     font-size: 100px;
   }
   .animThree {
-    margin-top: -40px;
-  }
-  .animThree p {
-    font-size: 13px;
+    display: none;
   }
 }
 @keyframes slideOne {
@@ -161,29 +177,48 @@ body {
   height: 100%;
   background: linear-gradient(#070707, #131313);
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   color: #fff;
 }
 
 .img {
+  padding: 25px;
   animation: slideImg 5s;
   animation-fill-mode: forwards;
-  margin-top: -150px;
 }
 
 .presentation {
-  margin: -45px 70px 0 150px;
+  padding: 25px;
   font-weight: 300;
   width: 50%;
 }
 .presentation h4 {
-  font-weight: 300;
+  font-weight: 400;
+  letter-spacing: 3px;
   text-align: center;
   font-size: 25px;
   margin-bottom: 25px;
 }
 .presentation p {
   text-align: right;
+}
+
+.presentation p::before {
+  content: "<p>";
+  font-family: "Qwigley", cursive;
+  color: #ff1cb0;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.presentation p::after {
+  content: "</p>";
+  font-family: "Qwigley", cursive;
+  font-size: 25px;
+  margin-left: 20px;
+  color: #ff1cb0;
 }
 
 @keyframes slideImg {
