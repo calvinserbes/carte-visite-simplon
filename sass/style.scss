@@ -5,89 +5,219 @@
 }
 
 body{
-    background-color: #070707;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto', serif;
 }
 
 // header ============================
 
 .header{
     height: 100%;
-    color: #fff;
+    color: #070707;
+    font-weight: 400;
+    background-color: #070707;
 }
 
-.wordone{
-    margin-top: 50px;
+.header h1{
+    margin: 0;
+    padding: 0;
+}
+
+// header anim =====================
+.animOne{
+    padding-top: 150px;
+    margin-bottom: -50px;
     display: flex;
     h1{
-        animation: slideWOne 5s;
+        font-weight: 300;
+        font-size: 70px;
+        animation: slideOne 4s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
     }
 }
 
-.wordtwo{
+.animTwo{
     display: flex;
     justify-content: end;
     h1{
-        animation: slideWTwo 5s;
+        font-weight: 300;
+        animation: slideTwo 6s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+    span{
+        font-family: 'Qwigley', cursive;
+        font-size: 200px;
+        font-weight: 300;
+    }
+    .exclam{
+        color: #070707;
+        cursor: pointer;
+        transition: .5s;
     }
 }
 
-.name{
-    display: flex;
-    h1{
-
-    }
+.exclam:hover{
+    color: #ff1cb0;
 }
 
-.text{
+.animThree{
+    margin-top: -90px;
+    letter-spacing: 5px;
+    padding-bottom: 200px;
     display: flex;
     p{
+        font-weight: 200;
+        font-size: 25px;
+        animation: slideThree 7s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+}
 
+@media screen and (max-width: 1000px){
+    .animOne{
+        h1{
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+    }
+    .animTwo{
+        span{
+            font-size: 150px;
+        }
+    }
+    .animThree{
+        margin-top: -60px;
+        p{
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 670px){
+    .animOne{
+        h1{
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+    }
+    .animTwo{
+        margin-top: 15px;
+        margin-left: 0px;
+        span{
+            font-size: 70px;
+        }
+        .exclam{
+            display: none;
+        }
+    }
+    .animThree{
+        margin-top: -20px;
+        p{
+            font-size: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .animOne{
+        h1{
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+    }
+    .animTwo{
+        margin-left: 150px;
+        span{
+            font-size: 100px;
+        }
+    }
+    .animThree{
+        margin-top: -40px;
+        p{
+            font-size: 13px;
+        }
     }
 }
 
 // ===================================
+
+// ===================================
 // Animation for header ==============
 
-@keyframes slideWOne {
+@keyframes slideOne {
     from {
         margin-left: 0;
-        opacity: 0;
+        color: #070707;
       }
     
       to {
         margin-left: 40%;
-        opacity: 1;
+        color: #fff;
       }
 }
 
-@keyframes slideWTwo {
+@keyframes slideTwo {
     from {
         margin-right: 0;
-        opacity: 0;
+        color: #070707;
       }
     
       to {
         margin-right: 40%;
-        opacity: 1;
+        color: #fff;
       }
 }
 
-@keyframes slideName {
+@keyframes slideThree {
     from{
-
+        margin-left: 0;
+        color: #070707;
     }
     to{
-
-    }
-}
-
-@keyframes slideText {
-    from{
-
-    }
-    to{
-
+        margin-left: 40%;
+        color: #fff;
     }
 }
 // =====================================
+
+.present{
+    height: 100%;
+    background: linear-gradient(#070707,#131313);
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.img{
+    animation: slideImg 5s;
+    animation-fill-mode: forwards;
+    margin-top: -150px;
+}
+
+.presentation{
+    margin: -45px 70px 0 150px;
+    font-weight: 300;
+    width: 50%;
+    h4{
+        font-weight: 300;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    p{
+        text-align: right;
+    }
+}
+
+@keyframes slideImg {
+    from{
+        margin-left: -20%;
+        opacity: 0;
+    }
+    to{
+        margin-left: 0%;
+        opacity: 1;
+    }
+}

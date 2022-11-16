@@ -5,58 +5,196 @@
 }
 
 body {
-  background-color: #070707;
-  font-family: "Crimson Text", serif;
+  font-family: "Roboto", serif;
 }
 
 .header {
   height: 100%;
-  color: #fff;
+  color: #070707;
+  font-weight: 400;
+  background-color: #070707;
 }
 
-.wordone {
-  margin-top: 50px;
+.header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.animOne {
+  padding-top: 150px;
+  margin-bottom: -50px;
   display: flex;
 }
-.wordone h1 {
-  animation: slideWOne 5s;
+.animOne h1 {
+  font-weight: 300;
+  font-size: 70px;
+  animation: slideOne 4s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
-.wordtwo {
+.animTwo {
   display: flex;
   justify-content: end;
 }
-.wordtwo h1 {
-  animation: slideWTwo 5s;
+.animTwo h1 {
+  font-weight: 300;
+  animation: slideTwo 6s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.animTwo span {
+  font-family: "Qwigley", cursive;
+  font-size: 200px;
+  font-weight: 300;
+}
+.animTwo .exclam {
+  color: #070707;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-.name {
+.exclam:hover {
+  color: #ff1cb0;
+}
+
+.animThree {
+  margin-top: -90px;
+  letter-spacing: 5px;
+  padding-bottom: 200px;
   display: flex;
 }
-.text {
-  display: flex;
+.animThree p {
+  font-weight: 200;
+  font-size: 25px;
+  animation: slideThree 7s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
-@keyframes slideWOne {
+
+@media screen and (max-width: 1000px) {
+  .animOne h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .animTwo span {
+    font-size: 150px;
+  }
+  .animThree {
+    margin-top: -60px;
+  }
+  .animThree p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .animOne h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .animTwo {
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  .animTwo span {
+    font-size: 70px;
+  }
+  .animTwo .exclam {
+    display: none;
+  }
+  .animThree {
+    margin-top: -20px;
+  }
+  .animThree p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .animOne h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  .animTwo {
+    margin-left: 150px;
+  }
+  .animTwo span {
+    font-size: 100px;
+  }
+  .animThree {
+    margin-top: -40px;
+  }
+  .animThree p {
+    font-size: 13px;
+  }
+}
+@keyframes slideOne {
   from {
     margin-left: 0;
-    opacity: 0;
+    color: #070707;
   }
   to {
     margin-left: 40%;
-    opacity: 1;
+    color: #fff;
   }
 }
-@keyframes slideWTwo {
+@keyframes slideTwo {
   from {
     margin-right: 0;
-    opacity: 0;
+    color: #070707;
   }
   to {
     margin-right: 40%;
+    color: #fff;
+  }
+}
+@keyframes slideThree {
+  from {
+    margin-left: 0;
+    color: #070707;
+  }
+  to {
+    margin-left: 40%;
+    color: #fff;
+  }
+}
+.present {
+  height: 100%;
+  background: linear-gradient(#070707, #131313);
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.img {
+  animation: slideImg 5s;
+  animation-fill-mode: forwards;
+  margin-top: -150px;
+}
+
+.presentation {
+  margin: -45px 70px 0 150px;
+  font-weight: 300;
+  width: 50%;
+}
+.presentation h4 {
+  font-weight: 300;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.presentation p {
+  text-align: right;
+}
+
+@keyframes slideImg {
+  from {
+    margin-left: -20%;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0%;
     opacity: 1;
   }
 }
-@keyframes slideName {}
-@keyframes slideText {}
 
 /*# sourceMappingURL=style.css.map */
