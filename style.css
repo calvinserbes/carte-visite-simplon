@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #070707;
+  font-family: "Crimson Text", serif;
+}
+
+.header {
+  height: 100%;
+  color: #fff;
+}
+
+.wordone {
+  margin-top: 50px;
+  display: flex;
+}
+.wordone h1 {
+  animation: slideWOne 5s;
+}
+
+.wordtwo {
+  display: flex;
+  justify-content: end;
+}
+.wordtwo h1 {
+  animation: slideWTwo 5s;
+}
+
+.name {
+  display: flex;
+}
+.text {
+  display: flex;
+}
+@keyframes slideWOne {
+  from {
+    margin-left: 0;
+    opacity: 0;
+  }
+  to {
+    margin-left: 40%;
+    opacity: 1;
+  }
+}
+@keyframes slideWTwo {
+  from {
+    margin-right: 0;
+    opacity: 0;
+  }
+  to {
+    margin-right: 40%;
+    opacity: 1;
+  }
+}
+@keyframes slideName {}
+@keyframes slideText {}
+
+/*# sourceMappingURL=style.css.map */

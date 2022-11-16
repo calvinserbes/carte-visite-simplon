@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #070707;
+    font-family: 'Crimson Text', serif;
+}
+
+// header ============================
+
+.header{
+    height: 100%;
+    color: #fff;
+}
+
+.wordone{
+    margin-top: 50px;
+    display: flex;
+    h1{
+        animation: slideWOne 5s;
+    }
+}
+
+.wordtwo{
+    display: flex;
+    justify-content: end;
+    h1{
+        animation: slideWTwo 5s;
+    }
+}
+
+.name{
+    display: flex;
+    h1{
+
+    }
+}
+
+.text{
+    display: flex;
+    p{
+
+    }
+}
+
+// ===================================
+// Animation for header ==============
+
+@keyframes slideWOne {
+    from {
+        margin-left: 0;
+        opacity: 0;
+      }
+    
+      to {
+        margin-left: 40%;
+        opacity: 1;
+      }
+}
+
+@keyframes slideWTwo {
+    from {
+        margin-right: 0;
+        opacity: 0;
+      }
+    
+      to {
+        margin-right: 40%;
+        opacity: 1;
+      }
+}
+
+@keyframes slideName {
+    from{
+
+    }
+    to{
+
+    }
+}
+
+@keyframes slideText {
+    from{
+
+    }
+    to{
+
+    }
+}
+// =====================================
