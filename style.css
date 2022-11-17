@@ -9,6 +9,8 @@ body {
 }
 
 .nav {
+  position: fixed;
+  width: 100%;
   padding: 8px;
   background: #070707;
 }
@@ -18,11 +20,16 @@ body {
   list-style-type: none;
 }
 .nav ul a {
+  transition: 0.3s;
   text-decoration: none;
   font-weight: 300;
   font-size: 18px;
   letter-spacing: 3px;
   color: #fff;
+}
+
+.nav a:hover {
+  color: #ff1cb0;
 }
 
 .header {
@@ -305,13 +312,14 @@ body {
 }
 
 .resume h2 {
+  text-align: center;
   font-weight: 400;
   letter-spacing: 3px;
   padding-bottom: 25px;
 }
 .resume li {
   list-style-type: none;
-  text-align: end;
+  text-align: center;
   padding-bottom: 50px;
 }
 
