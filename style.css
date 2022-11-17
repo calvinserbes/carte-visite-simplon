@@ -310,6 +310,9 @@ body {
   letter-spacing: 3px;
   padding-bottom: 25px;
 }
+.intro p {
+  line-height: 25px;
+}
 
 .resume h2 {
   text-align: center;
@@ -318,6 +321,7 @@ body {
   padding-bottom: 25px;
 }
 .resume li {
+  font-weight: 400;
   list-style-type: none;
   text-align: center;
   padding-bottom: 50px;

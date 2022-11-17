@@ -344,6 +344,9 @@ body{
         letter-spacing: 3px;
         padding-bottom: 25px;
     }
+    p{
+        line-height: 25px;
+    }
 }
 
 .resume{
@@ -354,6 +357,7 @@ body{
         padding-bottom: 25px; 
     }
     li{
+        font-weight: 400;
         list-style-type: none;
         text-align: center;
         padding-bottom: 50px;
