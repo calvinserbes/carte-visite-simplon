@@ -366,3 +366,45 @@ body{
         margin-left: 15px;
     }
 }
+
+// footer ===================================
+
+.footer{
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    .contact{
+        padding: 70px 0 70px 0;
+        a{
+            transition: .5s;
+            font-size: 20px;
+            letter-spacing: 7px;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+.contact{
+    a::before{
+        content: "=>";
+        font-family: 'Qwigley', cursive;
+        color: #ff1cb0;
+        font-size: 50px;
+        font-weight: 500;
+    }
+    a::after{
+        content: "<=";
+        font-family: 'Qwigley', cursive;
+        color: #ff1cb0;
+        font-size: 50px;
+        font-weight: 500;
+    }
+}
+
+.contact{
+    a:hover{
+        color: #ff1cb0;
+    }
+}

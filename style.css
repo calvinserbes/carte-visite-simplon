@@ -330,4 +330,40 @@ body {
   margin-left: 15px;
 }
 
+.footer {
+  height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+}
+.footer .contact {
+  padding: 70px 0 70px 0;
+}
+.footer .contact a {
+  transition: 0.5s;
+  font-size: 20px;
+  letter-spacing: 7px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact a::before {
+  content: "=>";
+  font-family: "Qwigley", cursive;
+  color: #ff1cb0;
+  font-size: 50px;
+  font-weight: 500;
+}
+.contact a::after {
+  content: "<=";
+  font-family: "Qwigley", cursive;
+  color: #ff1cb0;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  color: #ff1cb0;
+}
+
 /*# sourceMappingURL=style.css.map */
