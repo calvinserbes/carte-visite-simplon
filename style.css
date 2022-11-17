@@ -194,12 +194,14 @@ body {
   padding: 25px;
   animation: slideImg 5s;
   animation-fill-mode: forwards;
+  margin-bottom: 200px;
 }
 
 .presentation {
   padding: 25px;
-  font-weight: 300;
+  font-weight: 250;
   width: 50%;
+  margin-bottom: 200px;
 }
 .presentation h4 {
   font-weight: 400;
@@ -237,6 +239,52 @@ body {
     margin-left: 0%;
     opacity: 1;
   }
+}
+.social {
+  background: linear-gradient(#131313, #000);
+}
+.social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social ul li {
+  list-style-type: none;
+}
+.social ul a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+.social ul a i {
+  transition: 0.3s;
+  font-size: 50px;
+  margin-bottom: 150px;
+}
+
+.fa-instagram {
+  margin: 0 100px 0 100px;
+}
+
+.fa-instagram:hover {
+  background: linear-gradient(#2E58F4, #A431B6, #F4245F, #FD803E, #FFDE89);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-github:hover {
+  border: solid 1px;
+  border-color: #ff1cb0;
+  border-radius: 25%;
+  padding: 10px;
+}
+
+.fa-digital-ocean:hover {
+  border: solid 1px;
+  border-color: #ff1cb0;
+  border-radius: 25%;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
