@@ -287,4 +287,47 @@ body {
   padding: 10px;
 }
 
+.simplon {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 300;
+}
+
+.intro {
+  width: 60%;
+}
+.intro h2 {
+  font-weight: 400;
+  letter-spacing: 3px;
+  padding-bottom: 25px;
+}
+
+.resume h2 {
+  font-weight: 400;
+  letter-spacing: 3px;
+  padding-bottom: 25px;
+}
+.resume li {
+  list-style-type: none;
+  text-align: end;
+  padding-bottom: 50px;
+}
+
+.resume li::before {
+  content: "<li>";
+  font-family: "Qwigley", cursive;
+  color: #ff1cb0;
+  font-size: 25px;
+  margin-right: 15px;
+}
+.resume li::after {
+  content: "</li>";
+  font-family: "Qwigley", cursive;
+  color: #ff1cb0;
+  font-size: 25px;
+  margin-left: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */
